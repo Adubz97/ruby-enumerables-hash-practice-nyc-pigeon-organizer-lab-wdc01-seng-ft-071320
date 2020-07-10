@@ -9,7 +9,7 @@ def nyc_pigeon_organizer(data)
   # write your code here!
   organized_pigeon_list = {}
   data.each do |key, value|
-  value.each do |describe, array|
+  value.each do |inner_key, array|
   names.each do |name|
     
     if organized_pigeon_list.has_key?(name)
@@ -21,11 +21,11 @@ def nyc_pigeon_organizer(data)
     
   else
     organized_pigeon_list[name][key] = [
-      describe.to_s]
+      inner_key.to_s]
   end
   
 else
-  pigeon_list[name] = {key => [describe.to_s]}
+  pigeon_list[name] = {key => [inner_key.to_s]}
             end
         end
      end

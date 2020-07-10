@@ -14,7 +14,7 @@ def nyc_pigeon_organizer(data)
     
     if organized_pigeon_list.has_key?(name)
       
-    if pigeon_list[name].has_key?(key)
+    if organized_pigeon_list[name].has_key?(key)
       
     organized_pigeon_list[name][key] << 
     describe.to_s

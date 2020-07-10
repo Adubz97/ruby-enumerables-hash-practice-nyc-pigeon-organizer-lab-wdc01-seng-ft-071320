@@ -10,7 +10,7 @@ def nyc_pigeon_organizer(data)
   organized_pigeon_list = {}
   data.each do |key, value|
   value.each do |inner_key, array|
-  names.each do |name|
+  array.each do |name|
     
     if organized_pigeon_list.has_key?(name)
       

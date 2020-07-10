@@ -6,8 +6,11 @@
 
 
 def nyc_pigeon_organizer(data)
+  
   # write your code here!
+  
   organized_pigeon_list = {}
+  
   data.each do |key, value|
   value.each do |inner_key, array|
   array.each do |name|

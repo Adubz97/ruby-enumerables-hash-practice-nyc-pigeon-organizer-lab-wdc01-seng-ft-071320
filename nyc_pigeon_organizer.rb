@@ -25,7 +25,7 @@ def nyc_pigeon_organizer(data)
   end
   
 else
-  pigeon_list[name] = {key => [inner_key.to_s]}
+  organized_pigeon_list[name] = {key => [inner_key.to_s]}
             end
         end
      end
